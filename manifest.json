@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+
+	"name": "happier stream",
+	"description": "This extension removes the anti-adblock overlay on happystreams.net",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["http://happystreams.net/*"],
+			"js": ["jquery-3.0.0.min.js", "remove_overlay_if_exists.js"]
+		}
+	]
+}
